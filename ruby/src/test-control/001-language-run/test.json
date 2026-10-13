@@ -2,12 +2,18 @@
   "manifestVersion": 1,
   "protocolVersion": "2.0.0",
   "requestId": "ruby-template-language-run",
-  "extensionId": "com.m8test.extension.language.ruby",
-  "languageEntryId": "ruby",
   "fileName": "main.rb",
   "scriptFile": "main.rb",
   "timeoutMillis": 30000,
   "properties": {},
   "components": [],
-  "expectedLogs": ["test-control-language:ruby:passed"]
+  "expectedLogs": [
+    "test-control-language:ruby:passed"
+  ],
+  "language": {
+    "groupId": "com.m8test.language",
+    "artifactId": "ruby",
+    "version": "0.1.5",
+    "languageEntryId": "ruby"
+  }
 }
