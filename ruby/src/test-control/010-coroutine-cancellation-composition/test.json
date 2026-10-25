@@ -1,0 +1,31 @@
+{
+  "manifestVersion": 1,
+  "protocolVersion": "2.0.0",
+  "requestId": "ruby-template-coroutine-cancellation-composition",
+  "fileName": "main.rb",
+  "scriptFile": "main.rb",
+  "timeoutMillis": 30000,
+  "properties": {
+    "m8test.testControl.adbPort": "5555"
+  },
+  "components": [],
+  "expectedLogs": [
+    "coroutine:ruby:timeout-cancellation-preserved",
+    "coroutine:ruby:timeout-or-null-ok",
+    "coroutine:ruby:timeout-or-null-complete",
+    "coroutine:ruby:loop-timeout-cancelled-wait",
+    "coroutine:ruby:loop-iteration:1",
+    "coroutine:ruby:loop-iteration:2",
+    "coroutine:ruby:loop-iteration:3",
+    "coroutine:ruby:loop-completed-count:3",
+    "coroutine:ruby:composed-wait-ok",
+    "coroutine:ruby:composed-wait-complete",
+    "coroutine:ruby:cancellation-gate"
+  ],
+  "language": {
+    "groupId": "com.m8test.language",
+    "artifactId": "ruby",
+    "version": "0.1.5",
+    "languageEntryId": "ruby"
+  }
+}

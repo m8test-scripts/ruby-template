@@ -1,0 +1,33 @@
+{
+  "manifestVersion": 1,
+  "protocolVersion": "2.0.0",
+  "requestId": "ruby-template-coroutine-thread-context",
+  "fileName": "main.rb",
+  "scriptFile": "main.rb",
+  "timeoutMillis": 30000,
+  "properties": {
+    "m8test.testControl.adbPort": "5555"
+  },
+  "components": [],
+  "expectedLogs": [
+    "coroutine:ruby:script-main-verified",
+    "coroutine:ruby:io-captured-value-verified",
+    "coroutine:ruby:other-task-progressed",
+    "coroutine:ruby:delayed-captured-value-verified",
+    "coroutine:ruby:launch",
+    "coroutine:ruby:async",
+    "coroutine:ruby:async-success",
+    "coroutine:ruby:with-context",
+    "coroutine:ruby:flow:1",
+    "coroutine:ruby:flow:2",
+    "coroutine:ruby:flow-complete",
+    "coroutine:ruby:cancelled-work-complete",
+    "coroutine:ruby:gate"
+  ],
+  "language": {
+    "groupId": "com.m8test.language",
+    "artifactId": "ruby",
+    "version": "0.1.5",
+    "languageEntryId": "ruby"
+  }
+}

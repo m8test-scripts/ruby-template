@@ -1,0 +1,27 @@
+{
+  "manifestVersion": 1,
+  "protocolVersion": "2.0.0",
+  "requestId": "ruby-template-thread-timer-context",
+  "fileName": "main.rb",
+  "scriptFile": "main.rb",
+  "timeoutMillis": 30000,
+  "properties": {
+    "m8test.testControl.adbPort": "5555"
+  },
+  "components": [],
+  "expectedLogs": [
+    "thread-context:ruby:immediate",
+    "thread-context:ruby:timeout",
+    "thread-context:ruby:interval",
+    "thread-context:ruby:thread",
+    "thread-context:ruby:thread-start",
+    "thread-context:ruby:thread-exit",
+    "thread-context:ruby:verified"
+  ],
+  "language": {
+    "groupId": "com.m8test.language",
+    "artifactId": "ruby",
+    "version": "0.1.5",
+    "languageEntryId": "ruby"
+  }
+}
