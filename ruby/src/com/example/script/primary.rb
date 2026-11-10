@@ -11,13 +11,13 @@ $composeView.create do |slot|
     column.setVerticalArrangement { |arrangements| arrangements.getCenter }
     column.setContent do |columnSlot|
       columnSlot.Text do |text|
-        text.setText("点击次数: #{state.getValue()}")
+        text.setText("#{$stringResources.getString('demo.counter.label')}#{state.getValue()}")
         nil
       end
       columnSlot.TextButton do |button|
         button.setContent do |buttonSlot|
           buttonSlot.Text do |text|
-            text.setText("点击我")
+            text.setText($stringResources.getString("demo.counter.button"))
             nil
           end
           nil
@@ -27,6 +27,10 @@ $composeView.create do |slot|
           $logger.info("RUBY_UI_CLICK", "count=#{state.getValue()}")
           nil
         end
+        nil
+      end
+      columnSlot.Text do |text|
+        text.setText($stringResources.getString("demo.language"))
         nil
       end
       nil
