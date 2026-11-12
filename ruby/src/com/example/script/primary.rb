@@ -22,7 +22,7 @@ $composeView.create do |slot|
           end
           nil
         end
-        button.setOnClick do
+        button.onClick do
           state.setValue(state.getValue() + 1)
           $logger.info("RUBY_UI_CLICK", "count=#{state.getValue()}")
           nil
